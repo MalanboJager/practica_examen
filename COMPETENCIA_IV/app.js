@@ -416,6 +416,6 @@ corregir.onclick = function(){
     //colocamos la cantidad que acertoy las que no acertó
     h2 = document.createElement("h2");
     h2.className = "resultado";
-    h2.textContent = cantiCorrectas + " CORRECTAS - " + (33-cantiCorrectas) + " INCORRECTAS";
+    h2.textContent = cantiCorrectas + " CORRECTAS - " + (34-cantiCorrectas) + " INCORRECTAS";
     document.getElementById("juego").appendChild(h2);
 }
