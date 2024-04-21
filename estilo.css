@@ -7,11 +7,19 @@ html{
 }
 body{
     font-size: 20px;
-    background: #835ac5;
+    background: #1BA9A4;
     padding-bottom: 50px;
 }
 h1{
+	font-family: Arial;
+	font-size: 30px;
+	font-weight: bold;
+	color: #000000;
     text-align: center;
+}
+h5{
+    font-size: 13px;
+	line-height: 0px;
 }
 #juego{
     max-width: 800px;
