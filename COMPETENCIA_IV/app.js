@@ -419,3 +419,31 @@ corregir.onclick = function(){
     h2.textContent = cantiCorrectas + " CORRECTAS - " + (34-cantiCorrectas) + " INCORRECTAS";
     document.getElementById("juego").appendChild(h2);
 }
+
+let mostrar = document.getElementById("mostrarRespuestas");
+
+mostrar.onclick = function(){
+
+    for(let i=0; i < bd_juego.length; i++){
+
+        const pregunta = bd_juego[i];
+
+        // selecciona el radio correcto automáticamente
+        let radios = document.getElementsByName("p" + i);
+        radios[pregunta.correcta].checked = true;
+
+        // opcional: marcar visualmente como correcta
+        let idCorreccion = "p" + i + pregunta.correcta;
+        document.getElementById(i).className = "contenedor-pregunta correcta";
+        document.getElementById(idCorreccion).innerHTML = "&check;";
+        document.getElementById(idCorreccion).className = "acierto";
+    }
+
+    window.scrollTo(0,0);
+}
+
+    //desabilitamos todos los inputs
+    let inputs = document.getElementsByTagName("input");
+    for(i=0;i<inputs.length;i++){
+        inputs[i].disabled = true;
+    }

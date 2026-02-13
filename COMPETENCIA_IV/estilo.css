@@ -34,15 +34,15 @@ h5{
 }
 label{
     display: flex;
+    align-items: flex-start; /* 👈 esto lo sube a la primera línea */
     font-size: 22px;
     margin-bottom: 10px;
     cursor: pointer;
 }
-input{
-    display: inline-block;
-    width: 25px;
-    height: 25px;
+input[type="radio"]{
+    transform: scale(1.5);
     margin-right: 10px;
+    margin-top: 8px; /* 👈 ajusta entre 4px y 8px */
 }
 .correcta{
     background-color: #a8f6eb;
